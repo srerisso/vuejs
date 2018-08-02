@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ejemplo 2 de Vue</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+
+  <h1>v-if, v-for directives</h1>
+
+  <div id="app">
+    <p>Ejemplo 2 - message</p>
+      {{ message }}
+  </div>
+
+  <div id="app2">
+    <p>Ejemplo 2 - v-if directive</p>
+      <span v-if="seen">Now you see me</span>
+      {{ message }}
+  </div>
+
+  <div id="app3">
+    <p>Ejemplo 2 - v-for directive</p>
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+
+  <script src="js/ejemplo2.js"></script>
+
+  </body>
+</html>
