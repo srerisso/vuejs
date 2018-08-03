@@ -3,25 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Ejemplo 3 de Vue - User input, v-model</title>
+    <title>Ejemplo 4 de Vue - Components</title>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
 
-  <h1>Handling user input</h1>
+  <h1>Components</h1>
 
   <div id="app">
-    <p> {{ message }}</p>
-    <button v-on:click="reverseMessage"> Reverse Message</button>
+    <ol>
+      <todo-item></todo-item>
+      <todo-item></todo-item>
+      <todo-item></todo-item>
+    </ol>
   </div>
 
-  <div id="app2">
-    <p> {{ message }}</p>
-    <input v-model="message">
-  </div>
 
-  <script src="js/ejemplo3.js"></script>
+  <script src="js/ejemplo4.js"></script>
 
   </body>
 </html>
